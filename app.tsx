@@ -205,20 +205,20 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 border-b border-gray-300">
           <div className="p-4 border-r border-gray-300">
-            <label className="block text-xs font-bold mb-2 uppercase text-gray-500">PDE Definition (Python)</label>
+            <label className="block text-xs font-bold mb-2 uppercase text-gray-500">PDE Definition (on Python)</label>
             <textarea value={code} onChange={(e) => setCode(e.target.value)} className="w-full h-64 p-3 font-mono text-sm border border-gray-300 focus:outline-none bg-gray-50" spellCheck={false} />
           </div>
           <div className="p-4 space-y-4">
             <div>
-              <label className="block text-xs font-bold mb-2 uppercase text-gray-500">Domain Parameters</label>
+              <label className="block text-xs font-bold mb-2 uppercase text-gray-500">DomainParameters</label>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-[10px] font-bold uppercase text-gray-400 mb-1">x range</label>
-                  <input type="text" placeholder="X Range" defaultValue="-1.0, 1.0" className="w-full border border-gray-300 p-2 text-sm" />
+                  <label className="block text-[10px] font-bold uppercase text-gray-400 mb-1">x-range</label>
+                  <input type="text" placeholder="X range" defaultValue="-1.0, 1.0" className="w-full border border-gray-300 p-2 text-sm" />
                 </div>
                 <div>
-                  <label className="block text-[10px] font-bold uppercase text-gray-400 mb-1">t range</label>
-                  <input type="text" placeholder="T Range" defaultValue="0.0, 1.0" className="w-full border border-gray-300 p-2 text-sm" />
+                  <label className="block text-[10px] font-bold uppercase text-gray-400 mb-1">t-range</label>
+                  <input type="text" placeholder="T range" defaultValue="0.0, 1.0" className="w-full border border-gray-300 p-2 text-sm" />
                 </div>
               </div>
             </div>
